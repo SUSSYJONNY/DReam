@@ -39,7 +39,7 @@ function check() {
     console.log("resposta em NUMEROS NAO LETRAS CARAMBA" + answer);
 
     if (answer == resposta) {
-        if (answer_turn = "player1") {
+        if (answer_turn == "player1") {
             player1_score = player1_score + 1;
             document.getElementById("player1_score").innerHTML = player1_score;
         }
@@ -49,7 +49,7 @@ function check() {
 
         }
     }
-    if (question_turn = "player1") {
+    if (question_turn == "player1") {
         question_turn = "player2";
         document.getElementById("player_question").innerHTML = "turno de perguntas " + player2_name;
     }
@@ -60,7 +60,7 @@ function check() {
     }
 
 
-    if (answer_turn = "player1") {
+    if (answer_turn == "player1") {
         answer_turn = "player2";
         document.getElementById("player_answer").innerHTML = "respostas " + player2_name;
     }
